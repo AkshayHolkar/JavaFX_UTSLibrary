@@ -1,0 +1,65 @@
+.root { 
+    -fx-background-color: white;
+    -fx-padding: 10;
+}
+
+Label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+Text {
+    -fx-fill: #757575;
+}
+
+.heading {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/*#message {
+    -fx-fill: FIREBRICK;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+}*/
+
+.button {
+    -fx-pref-width: 250px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font: verdana;
+    -fx-background-color: #bfbfbf;
+}
+
+.button:hover {
+    -fx-background-color: #54d4ff;/*#0020ED;*/
+}
+
+.header {
+    -fx-padding: 15px;
+}
+
+.body {
+    -fx-padding: 10;
+}
+
+.footer {
+    -fx-padding: 15px;
+}
+
+GridPane.table {
+    -fx-padding: 15px;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-background-color: #99ddff;
+}
+
+.table-cell {
+    -fx-alignment: center;
+}
+
+*:focused {
+    -fx-focus-color: #11a141;
+}

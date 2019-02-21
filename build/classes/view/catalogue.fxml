@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.CatalogueController"
+      alignment="center" spacing="10" 
+      styleClass="root"
+>
+    
+   
+    
+
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+     
+      <HBox styleClass="heading" >            
+     <ImageView fx:id="imageView" styleClass="heading">
+          
+         <image><Image url="@UTS-logo.jpg"/></image>
+     </ImageView>
+     <VBox>
+      <Label styleClass="heading"  text="Library"/>
+      <Label styleClass="heading"  text="Managment"/>
+      <Label styleClass="heading"  text="System"/>
+     </VBox>
+  </HBox>
+    <Button fx:id="disABookBtn" text="Show All Books" styleClass="button"  onAction="#handleAllbook" />
+    <Button fx:id="disAvaiBtn" text="Show All Available Books" styleClass="button" onAction="#handleAvabook"/> 
+    
+    
+    <Button fx:id="disBGBtn"  text="Show Books By Genre" styleClass="button" onAction="#handleDisBoGenre"/>
+   
+     <Button fx:id="disBABtn"  text="Show Books By Author" styleClass="button" onAction="#handleDisBoAuthor" />
+      <Button fx:id="BBBtn"  text="Borrow Books" styleClass="button" onAction="#handleBorrowB" />
+       <Button fx:id="retBBtn"  text="Return Books" styleClass="button" onAction="#handleReturn" />
+        <Button fx:id="placeHBtn"  text="Place hold" styleClass="button" onAction="#handlePlaceHold"/>
+         <Button fx:id="returnMBtn"  text="Close Catalogue Menu" styleClass="button" onAction="#handleClose" />
+    
+
+     
+    
+</VBox>

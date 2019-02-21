@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.AddPatronController"
+      alignment="center" spacing="10" 
+      styleClass="root"
+>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+   
+        <GridPane  alignment="center" hgap="10" vgap="10" >
+
+	<Label text="Patron ID:" styleClass="Label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+	<TextField fx:id="patronITf" text="" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+	<Label text="Patron Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+	<TextField fx:id="patronNTf" text="" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+	
+        	
+</GridPane>
+       <Text styleClass="dialogError" text="${controller.exception.message}"/>
+        <Button text = "Add Patron" styleClass="button" onAction="#handleAddPat"/>
+     <Button text = "Close" styleClass="button" onAction="#handleClose"/>
+   
+
+     
+    
+</VBox>

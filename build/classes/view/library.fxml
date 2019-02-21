@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<?import javafx.scene.image.*?>
+
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.LibraryController"
+      alignment="center" spacing="10" 
+      styleClass="root"
+>
+      <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+    
+   
+  <HBox styleClass="heading" >           
+     <ImageView fx:id="imageView" styleClass="heading">
+          
+         <image><Image url="@UTS-logo.jpg"/></image>
+     </ImageView>
+     <VBox>
+      <Label styleClass="heading"   text="Library"/>
+      <Label styleClass="heading"  text="Managment"/>
+      <Label styleClass="heading"  text="System"/>
+     </VBox>
+  </HBox>
+    <Button fx:id="cataBtn" text="Explore Catalogue" styleClass="button" onAction="#handleCatalogue"  />
+    <Button fx:id="patronBtn" text="View Patron Record" styleClass="button" onAction="#handlePatronR"/> 
+    
+    <Button fx:id="favboBtn"   text="View Favourite Books" styleClass="button" onAction="#handleFav" />
+    <Button fx:id="adminBtn"  text="Enter Administration Mode" styleClass="button" onAction="#handleAdmin"/>
+    <Button fx:id="exitBtn"  text="Exit" styleClass="button" onAction="#handleexit"/>
+
+     
+    
+</VBox>
